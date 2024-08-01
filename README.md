@@ -19,3 +19,4 @@ Pattern search algorithms are used to find occurrences of a pattern within a lar
 ### 4. Rabin Karp
 *This algorithm uses hashing to quickly compare the hash values of the pattern and substrings of the text. It is particularly useful for multiple pattern searches. Its average time complexity is O(n + m), but the worst-case complexity can be higher due to hash collisions.*
 
+## (!! In order for each algorithm to work, you must examine and use the files in the header folder!!)
