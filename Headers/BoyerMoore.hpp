@@ -27,7 +27,7 @@ void badCharHeuristic(string str, int size, int *badchar) {
 
 /* A pattern searching function that uses Bad
 Character Heuristic of Boyer Moore Algorithm */
-void search(string filePath, string pat) {
+void BMsearch(string filePath, string pat) {
     char* txt = ReadAllBytes(filePath);  // Assuming this function reads the file content into a char array
     int m = pat.size();
     int n = get_file_size(filePath);  // Assuming this function returns the size of the file

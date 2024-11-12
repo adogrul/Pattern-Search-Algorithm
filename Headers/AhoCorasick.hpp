@@ -108,7 +108,7 @@ int findNextState(int currentState, char nextInput) {
     return g[currentState][ch]; 
 } 
   
-void searchWords(vector<string> &arr, int k, const string &filePath) { 
+void ACsearch(vector<string> &arr, int k, const string &filePath) { 
     int size = get_file_size(filePath);
     char* text = ReadAllBytes(filePath);
     buildMatchingMachine(arr, k); 

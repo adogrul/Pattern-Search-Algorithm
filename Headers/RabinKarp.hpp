@@ -9,7 +9,7 @@
 	txt -> text
 	q -> A prime number
 */
-void search(string keywords, string filePath, int q)
+void RKsearch(string keywords, string filePath, int q)
 {
     char* pat = (char*)keywords.c_str();
 	int M = strlen(keywords.c_str());

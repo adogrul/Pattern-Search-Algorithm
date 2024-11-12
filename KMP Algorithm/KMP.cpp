@@ -1,4 +1,7 @@
-#include "../../Headers/KMP.hpp"
+#include "../Headers/KMP.hpp"
+#include "../Headers/Methods.hpp"
+#include <fstream>
+#include <vector>
 #include <iostream>
 
 int main()
@@ -14,7 +17,7 @@ int main()
     if (csvFile.is_open()) {
         string line;
         while (getline(csvFile, line)) {
-            keywords.push_back(line); // Her satırı anahtar kelime olarak vector'e ekle
+            keywords.push_back(line);
         }
         csvFile.close();
     } else {

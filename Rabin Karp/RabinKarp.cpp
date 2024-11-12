@@ -4,7 +4,8 @@ Algorithm given in the CLRS book */
 #include <string.h>
 #include <iostream>
 #include <limits.h>
-#include "../../Headers/RabinKarp.hpp"
+#include "../Headers/RabinKarp.hpp"
+#include "../Headers/Methods.hpp"
 using namespace std;
 
 
@@ -45,8 +46,7 @@ int main()
         {
             for (const auto &keyword : keywords) 
             {
-                search(keyword ,txt,q);
-            }
+                RKsearch(keyword, entry, q);          }
         }else{
             cout<<entry<<" dosyası PE dosyası değil"<<endl;
         }
